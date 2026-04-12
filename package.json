@@ -1,0 +1,12 @@
+{
+  "name": "devops-practical",
+  "version": "1.0.0",
+  "description": "Simple Node.js DevOps practical project",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
