@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+    PATH = "/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+  }
 
   stages {
     stage('Checkout') {
@@ -10,6 +13,8 @@ pipeline {
 
     stage('Install Dependencies') {
       steps {
+        sh 'node -v'
+        sh 'npm -v'
         sh 'npm install'
       }
     }
